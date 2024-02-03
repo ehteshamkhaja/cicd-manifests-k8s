@@ -19,3 +19,5 @@ spec:
         image: khajaehtesham/todoapp:7
         ports:
         - containerPort: 8000
+
+        
