@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: httpd:bookworm
+        image: khajaehtesham/todoapp:11
         ports:
         - containerPort: 80
 
