@@ -18,5 +18,5 @@ spec:
       - name: todo
         image: httpd:bookworm
         ports:
-        - containerPort: 8000
+        - containerPort: 80
 
