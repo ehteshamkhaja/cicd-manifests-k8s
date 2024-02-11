@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: khajaehtesham/todoapp:20
+        image: sgandla33/argocd-k8s:
         ports:
         - containerPort: 80
 
