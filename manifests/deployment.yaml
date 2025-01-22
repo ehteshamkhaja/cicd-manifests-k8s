@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-app
+  name: app3-nginx-deployment
   labels:
-    app: nginx
+    app: app3-nginx
+  namespace: eks-demo
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: app3-nginx
   template:
     metadata:
       labels:
-        app: nginx
+        app: app3-nginx
     spec:
       containers:
-      - name: todo
-        image: sgandla33/argocd-k8s:
-        ports:
-        - containerPort: 80
-
+        - name: app3-nginx
+          image: stacksimplify/kubenginx:1.0.0
+          ports:
+            - containerPort: 80
