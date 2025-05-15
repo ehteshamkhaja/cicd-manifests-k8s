@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: app3-nginx
-          image: 210613553230.dkr.ecr.us-east-1.amazonaws.com/eks-demo:32
+          image: khajaehtesham/springboot-app:v1
           ports:
             - containerPort: 80
